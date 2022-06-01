@@ -1,0 +1,28 @@
+# Beryllium
+
+spacing         = 2
+hide_ascii      = true
+prefer_small_ascii = true
+#key_color       = "#7067CF"
+separator       = ">"
+
+[box]
+border          = "rounded"
+visible         = true
+title           = " glo@globabee "
+
+[palette]
+glyph           = "○  "
+visible         = true
+
+[bar]
+glyph           = "○"
+hide_delimiters = false
+visible         = true
+
+[box.inner_margin]
+x               = 0
+y               = 1
+
+[custom_ascii]
+#color           = "#FF7001"

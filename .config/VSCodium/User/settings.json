@@ -1,0 +1,120 @@
+{
+  // ! Theme: Aurora X
+  // ! Extensions:
+  // *  - Auto Import
+  // *  - Better Comments
+  // *  - Discord Rich Presence
+  // *  - Import Cost
+  // *  - Prettier
+  // *  - VSCode-icons
+  // ---
+  // * Prettier
+  // ---
+  "emmet.excludeLanguages": ["markdown"],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // ---
+  // * Prettier
+  // ---
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.printWidth": 100,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ---
+  // * ESLint
+  // ---
+  "eslint.packageManager": "npm",
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ---
+  // * DISCORD RPC
+  // ---
+  "rpc.appName": "Visual Studio Code",
+  "rpc.problemsText": "- {problemsCount} problems",
+  "rpc.buttonEnabled": true,
+  "rpc.buttonActiveLabel": "Repo",
+  "rpc.buttonInactiveLabel": "null",
+  "rpc.buttonInactiveUrl": "null",
+  "rpc.detailsEditing": "{workspace} {problems}",
+  "rpc.lowerDetailsEditing": "{file_name}:{current_line}:{current_column}",
+  "rpc.lowerDetailsIdling": "AFK",
+  "rpc.largeImageIdling": "AFK",
+  "rpc.detailsViewing": "{workspace} {problems}",
+  "rpc.detailsIdling": "AFK",
+  // ---
+  // * EDITOR
+  // ---
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+  "window.dialogStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Aurora X",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.smoothScrolling": true,
+  // === => <=
+  "editor.fontFamily": "VictorMono Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 0,
+  "editor.fontWeight": "420",
+  "editor.mouseWheelZoom": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "trunk.trunkGrayOutNonBlockingIssues": false,
+  // ---
+  // * WORKBENCH
+  // ---
+  "workbench.sideBar.location": "right",
+  "workbench.reduceMotion": "on",
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "workbench.editor.splitSizing": "split",
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.editor.titleScrollbarSizing": "large",
+  "breadcrumbs.enabled": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  // ---
+  // * AUDIO CUES
+  // ---
+  "audioCues.lineHasBreakpoint": "on",
+  "audioCues.lineHasError": "on",
+  "audioCues.lineHasFoldedArea": "on",
+  "audioCues.lineHasInlineSuggestion": "on",
+  "audioCues.lineHasWarning": "on",
+  "audioCues.onDebugBreak": "on",
+  "audioCues.noInlayHints": "on",
+  // ---
+  // * TERMINAL STUFF
+  // ---
+  "terminal.external.linuxExec": "foot",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.gpuAcceleration": "on",
+  "window.zoomLevel": 2,
+  "explorer.confirmDragAndDrop": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.statusBar.visible": false
+}

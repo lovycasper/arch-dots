@@ -1,0 +1,26 @@
+#
+# AUTOSTART
+#
+exec --no-startup-id flameshot
+exec --no-startup-id wal -R
+exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
+exec --no-startup-id bluetoothctl power on 
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+
+#
+# Apps Rules
+#
+# Tag xwayland windows as such
+for_window [shell="xwayland"] title_format "<span>[X] %title</span>"
+
+# default floating
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [instance="update_installer"] floating enable	

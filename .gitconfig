@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+[user]
+	email = me@globabee.com
+	name = Glo Globabee
+	signingkey = 52A6E3544AE447F3
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2

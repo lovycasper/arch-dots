@@ -1,0 +1,31 @@
+# Remove this in ~
+/*
+
+# Except this in in ~
+!/.config/
+!/.zshrc
+!/.gitignore
+!/.gitconfig
+!/.drirc
+!/.ncpamixer.conf
+!/README.md
+
+# Remove this in ~/.config 
+/.config/*
+
+# Except this in ~/.config/
+!/.config/btop
+!/.config/foot
+!/.config/lvim
+!/.config/macchina
+!/.config/sway
+!/.config/VSCodium
+!/.config/wal
+!/.config/chromium-flags.conf
+!/.config/mimeapps.list
+
+# Except this in ~/.config/VSCodium
+/.config/VSCodium/*
+!/.config/VSCodium/User
+/.config/VSCodium/User/*
+!/.config/VSCodium/User/settings.json
