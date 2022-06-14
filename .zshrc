@@ -2,7 +2,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="typewritten"
+ZSH_THEME="robbyrussell"
 
 zstyle ':omz:update' mode auto      # update automatically without asking
 zstyle ':omz:update' frequency 13
@@ -20,10 +20,6 @@ source $ZSH/oh-my-zsh.sh
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
 
-# ZSH Theme Variables
-export TYPEWRITTEN_RELATIVE_PATH="adaptive"
-export TYPEWRITTEN_PROMPT_LAYOUT="pure"
-
 # Aliases
 # Add integration with fzf, tail in bat
 alias cat="bat -A"
@@ -40,3 +36,7 @@ export XDG_CURRENT_DESKTOP=sway
 export XDG_SESSION_DESKTOP=sway
 export PATH=/home/glo/.cargo/bin:/home/glo/.local/bin/:$PATH
 export GPG_TTY=$(tty)
+
+# Set typewritten ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt typewritten
